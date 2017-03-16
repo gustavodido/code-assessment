@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 
 const App = (props) =>
@@ -9,6 +9,16 @@ const App = (props) =>
     <p className="App-intro">
       To get started, edit <code>src/App.js</code> and save to reload.
     </p>
+    <table className="table table-striped">
+    <tbody>
+      <tr>
+        <td>Gustavo</td>
+      </tr>
+      <tr>
+        <td>Gustavo</td>
+      </tr>
+      </tbody>
+    </table>
   </div>;
 
 export default App;

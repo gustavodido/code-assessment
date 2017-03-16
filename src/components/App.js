@@ -1,6 +1,6 @@
 import React from 'react';
 
-import QuestionListContainer from './../../containers/QuestionListContainer'
+import QuestionListContainer from './../containers/QuestionListContainer'
 
 import './App.css';
 

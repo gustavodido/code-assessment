@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 
-import Question from './../Question/Question'
+import Question from './Question'
 
 const QuestionList = ({onQuestionValueChanged, questions}) =>
     <div>

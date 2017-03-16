@@ -20,8 +20,8 @@ const questions = (state = initialState, action) => {
   }
 }
 
-const RootReducer = combineReducers({
+const Reducers = combineReducers({
     questions
 })
 
-export default RootReducer
+export default Reducers

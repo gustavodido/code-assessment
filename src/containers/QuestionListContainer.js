@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 
 import { changeQuestionValue } from './../actions/Actions'
-import QuestionList from './../components/QuestionList/QuestionList'
+import QuestionList from './../components/QuestionList'
 
 const mapStateToProps = (state) => {
   return {

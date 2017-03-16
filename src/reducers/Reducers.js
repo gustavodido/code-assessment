@@ -1,13 +1,12 @@
 import { combineReducers } from 'redux'
 
-const initialState = [
-    { id:1, label: "This is a question by temp", value: 0 } ,
-    { id: 2, label: "This is a second question", value: 2 }
-];
+import ActionTypes from "./../constants/ActionTypes"
+import InitialState from "./../constants/InitialState"
 
-const questions = (state = initialState, action) => {
+const questions = (state = InitialState.Questions, action) => {
   switch (action.type) {
-    case 'CHANGE_QUESTION_VALUE':
+      
+    case ActionTypes.ChangeQuestionValue:
       return state.map(q => {
           if (q.id === action.id) {
             return { ...q, value: action.value };

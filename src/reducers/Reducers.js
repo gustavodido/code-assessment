@@ -15,12 +15,17 @@ const questions = (state = InitialState.Questions, action) => {
       });
 
     default:
-      return state
+      return state;
   }
 }
 
+const categories = (state = InitialState.Categories, action) => {
+  return state;
+}
+
 const Reducers = combineReducers({
-    questions
+    questions,
+    categories
 })
 
 export default Reducers

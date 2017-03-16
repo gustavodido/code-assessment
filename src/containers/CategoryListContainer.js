@@ -1,11 +1,12 @@
 import { connect } from 'react-redux'
 
 import { changeQuestionValue } from './../actions/Actions'
-import QuestionList from './../components/QuestionList'
+import CategoryList from './../components/CategoryList'
 
 const mapStateToProps = (state) => {
   return {
-    questions: state.questions
+    questions: state.questions,
+    categories: state.categories
   }
 }
 
@@ -17,6 +18,6 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-const QuestionListContainer = connect(mapStateToProps, mapDispatchToProps)(QuestionList);
+const CategoryListContainer = connect(mapStateToProps, mapDispatchToProps)(CategoryList);
 
-export default QuestionListContainer;
+export default CategoryListContainer;

@@ -10,9 +10,9 @@ const questions = (state = initialState, action) => {
     case 'CHANGE_QUESTION_VALUE':
       return state.map(q => {
           if (q.id === action.id) {
-              q.value = action.value;
+            return { ...q, value: action.value };
           }
-          return q;
+          return { ...q };
       });
 
     default:

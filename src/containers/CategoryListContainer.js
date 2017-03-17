@@ -13,7 +13,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onQuestionValueChanged: (id, value) => {
-       dispatch(changeQuestionValue(id, value))
+       dispatch(changeQuestionValue(id, value));
     }
   }
 }

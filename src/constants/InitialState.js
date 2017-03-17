@@ -4,11 +4,7 @@ const InitialState = {
         { id: 2, label: 'Is bad inputs correctly validated?', value: 0, category: "Operationalness" }
     ],
     Categories: [
-        "Operationalness",
-        "Technical Depth",
-        "Technical Breath",
-        "Design",
-        "Readability"
+        { id: 1, label: "Operationalness" }
     ]
 };
 

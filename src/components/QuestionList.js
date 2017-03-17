@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react';
 import Question from './Question'
 
 const QuestionList = ({ onQuestionValueChanged, questions, category }) => {
-    const categoryQuestions = questions.filter(q => q.category === category);
+    const categoryQuestions = questions.filter(q => q.category === category.label);
 
     return  <div>
             { 
@@ -20,7 +20,7 @@ const QuestionList = ({ onQuestionValueChanged, questions, category }) => {
 QuestionList.propTypes = {
   onQuestionValueChanged: PropTypes.func.isRequired,
   questions: PropTypes.arrayOf(PropTypes.shape({ label: PropTypes.string.isRequired }).isRequired).isRequired,
-  category: PropTypes.string.isRequired
+  category: PropTypes.object.isRequired
 }
 
 export default QuestionList;

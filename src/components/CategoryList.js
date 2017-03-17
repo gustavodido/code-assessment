@@ -9,8 +9,8 @@ const CategoryList = ({onQuestionValueChanged, questions, categories}) =>
     <div>
         {
             categories.map(category => 
-                <Column key={ category }>
-                    <Panel title={ category } >
+                <Column key={ category.id } size={12}>
+                    <Panel title={ category.label } >
                         <QuestionList category={ category }
                                       onQuestionValueChanged={ onQuestionValueChanged }
                                       questions={ questions } 
@@ -23,7 +23,7 @@ const CategoryList = ({onQuestionValueChanged, questions, categories}) =>
 CategoryList.propTypes = {
   onQuestionValueChanged: PropTypes.func.isRequired,
   questions: PropTypes.arrayOf(PropTypes.shape({ label: PropTypes.string.isRequired }).isRequired).isRequired,
-  categories: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired
+  categories: PropTypes.array.isRequired
 }
 
 export default CategoryList;
